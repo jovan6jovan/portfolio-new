@@ -1,23 +1,21 @@
-$primary-color: #ffd948;
-$white-color: #fffade;
-$black-color: #212121;
-$headings-font: 'Archivo Black', sans-serif;
-$body-font: 'Roboto', sans-serif;
+@import "../styles/variables";
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: $primary-color;
-    font-family: $body-font;
-    height: 100%;
-    line-height: 1.6;
-    // display: none;
+  background-color: $primary-color;
+  color: $black-color;
+  font-family: $body-font;
+  font-size: 1.125rem;
+  height: 100%;
+  line-height: 1.6;
+  // display: none;
 }
 
 h1,
@@ -26,9 +24,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings-font;
+  font-family: $headings-font;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  // za desktop: padding: 1em 1.77em;
+  padding: 0.5em 0.8em;
+  letter-spacing: 1px;
+}
+
+.btn--blue {
+  border: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $white-color;
+    color: $secondary-color;
+  }
 }

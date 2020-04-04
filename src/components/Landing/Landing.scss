@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.landing {
+  padding: 0 1em;
+
+  &__title {
+    line-height: 1;
+    font-size: 3rem;
+    margin-bottom: 0.66em;
+  }
+
+  &__btn {
+    margin-bottom: 2em;
+  }
+}
