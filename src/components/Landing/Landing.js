@@ -6,7 +6,9 @@ import programmer from "../../images/programmer.svg"
 const Landing = () => (
   <main className="landing">
     <section className="landing__content">
-      <h1 className="landing__title">Front-End Developer</h1>
+      <h1 className="landing__title">
+        <span class="landing__title--span">Front-End </span>Developer
+      </h1>
       <p className="landing__text">
         Not that we aren’t huge fans of IKEA, of course. I do think this
         combination can work, but it needs to be used as an accent, rather than a

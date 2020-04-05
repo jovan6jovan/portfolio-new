@@ -18,14 +18,23 @@ header {
 .logo {
   font-family: $headings-font;
   color: $black-color;
-
-  &:hover {
-    color: $white-color;
-  }
+  @include gradient-text(to left, $secondary-color, lighten($secondary-color, 15%));
+  position: relative;
+  transition: all 0.5s;
 
   @include desktops {
     font-size: 1.5rem;
   }
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-color: $secondary-color;
+  //   height: 0.25rem;
+  //   width: 100%;
+  // }
 }
 
 .nav__list {
@@ -36,7 +45,7 @@ header {
   margin-top: 1em;
 
   &-item-link {
-    color: $black-color;
+    color: darken($secondary-color, 5%);
 
     &:hover {
       color: $white-color;
@@ -46,15 +55,12 @@ header {
 
     @include desktops {
       margin-right: 1em;
+      margin-top: 0;
+      font-size: 1.25rem;
 
       &[href="/contact"] {
         margin-right: 0;
       }
     }
-  }
-
-  @include desktops {
-    margin-top: 0;
-    font-size: 1.25rem;
   }
 }
