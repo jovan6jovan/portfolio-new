@@ -1,9 +1,18 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 header {
   padding: 1em;
   text-align: center;
   width: 100%;
+
+  @include desktops {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4em;
+    padding-right: 2em;
+  }
 }
 
 .logo {
@@ -12,6 +21,10 @@ header {
 
   &:hover {
     color: $white-color;
+  }
+
+  @include desktops {
+    font-size: 1.5rem;
   }
 }
 
@@ -26,9 +39,22 @@ header {
     color: $black-color;
 
     &:hover {
-      color: $secondary-color;
+      color: $white-color;
       padding-bottom: 0.25em;
       border-bottom: 1px solid $white-color;
     }
+
+    @include desktops {
+      margin-right: 1em;
+
+      &[href="/contact"] {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include desktops {
+    margin-top: 0;
+    font-size: 1.25rem;
   }
 }
