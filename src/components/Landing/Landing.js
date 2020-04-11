@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Landing.scss";
-import programmer from "../../images/programmer.svg"
+import programmer from "../../images/programmer-v2.svg"
 
 const Landing = () => (
   <main className="landing">
     <section className="landing__content">
       <h1 className="landing__title">
-        <span class="landing__title--span">Front-End </span>Developer
+        <span className="landing__title--span">Front-End </span>Developer
       </h1>
       <p className="landing__text">
         Not that we aren’t huge fans of IKEA, of course. I do think this
