@@ -6,8 +6,8 @@ import Header from "../components/Header/Header";
 
 const App = () => (
   <>
-  <Header />
-  <Main />
+    <Header />
+    <Main />
   </>
 );
 

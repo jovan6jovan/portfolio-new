@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.project-card {
+  max-width: 350px;
+  border: 2px solid $secondary-color;
+  text-align: center;
+  margin: 1em auto;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & h3 {
+    padding-top: 0.5em;
+    margin-bottom: 0.75em;
+  }
+
+  & p {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & a {
+    display: inline-block;
+    border: 1px solid $secondary-color;
+    padding: 5px 8px;
+    margin-bottom: 1em;
+
+    &:first-of-type {
+      margin-right: 1em;
+    }
+  }
+}
