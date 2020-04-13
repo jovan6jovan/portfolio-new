@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { fetchProjects } from "./fetchProjects";
 import ReactProjects from "./ReactProjects";
 import VanillaProjects from "./VanillaProjects";
 import WordPressProjects from "./WordPressProjects";
@@ -6,6 +7,11 @@ import "./Projects.scss";
 
 const Projects = () => {
   const [id, setId] = useState("vanilla");
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetchProjects(setProjects);
+  }, []);
 
   const onHeadingClick = (e) => {
     setId(e.target.id);
@@ -38,9 +44,9 @@ const Projects = () => {
       </ul>
 
       <div className="projects-grid">
-        {id === "vanilla" && <VanillaProjects />}
-        {id === "react" && <ReactProjects />}
-        {id === "wordpress" && <WordPressProjects />}
+        {id === "vanilla" && <VanillaProjects projects={projects} />}
+        {id === "react" && <ReactProjects projects={projects}  />}
+        {id === "wordpress" && <WordPressProjects projects={projects} />}
       </div>
     </>
   );

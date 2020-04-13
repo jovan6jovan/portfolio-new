@@ -1,24 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Project from "./Project";
 
-const ReactProjects = () => {
-  // const [loading, setLoading] = useState(false);
-  const [projects, setProjects] = useState([]);
-
-  async function fetchProjects() {
-    // setLoading(true);
-    const res = await fetch("./projects.json");
-    res
-      .json()
-      .then((res) => setProjects(res))
-      .catch((err) => console.log(err));
-    // setLoading(false);
-  }
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-
+const ReactProjects = ({ projects }) => {
   return (
     <>
       {projects.map((project) =>
