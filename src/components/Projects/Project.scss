@@ -3,9 +3,12 @@
 
 .project-card {
   max-width: 350px;
-  border: 2px solid $secondary-color;
+  border: 0.25em solid $secondary-color;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, lighten($secondary-color, 20%), $secondary-color);
   text-align: center;
   margin: 1em auto;
+  box-shadow: $box-shadow;
 
   &:first-of-type {
     margin-top: 0;
@@ -15,9 +18,24 @@
     margin-bottom: 0;
   }
 
+  & img {
+    opacity: 0.9;
+  }
+
   & h3 {
     padding-top: 0.5em;
     margin-bottom: 0.75em;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: $secondary-color;
+      position: absolute;
+      z-index: -1;
+      width: 0.9em;
+      height: 0.9em;
+      transform: translate(-0.5em, -0.1em);
+    }
   }
 
   & p {
@@ -27,10 +45,13 @@
   }
 
   & a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    color: $secondary-color;
     border: 1px solid $secondary-color;
     padding: 5px 8px;
     margin-bottom: 1em;
+    box-shadow: $box-shadow;
 
     &:first-of-type {
       margin-right: 1em;

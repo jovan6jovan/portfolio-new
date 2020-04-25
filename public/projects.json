@@ -2,7 +2,7 @@
   {
     "projectCategoryId": "vanilla",
     "projectId": 1,
-    "img": "",
+    "imgSrc": "",
     "title": "Two Dice Pig Game",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "",
@@ -11,7 +11,16 @@
   {
     "projectCategoryId": "react",
     "projectId": 6,
-    "img": "/images/nba.jpg",
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/pl.jpg",
+    "title": "Premier League App",
+    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+    "githubUrl": "https://github.com/jovan6jovan/pl-app",
+    "demoUrl": "https://pl-app.netlify.com/"
+  },
+  {
+    "projectCategoryId": "react",
+    "projectId": 7,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/nba.jpg",
     "title": "Mini NBA App",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "https://github.com/jovan6jovan/nba-app",
@@ -19,17 +28,8 @@
   },
   {
     "projectCategoryId": "react",
-    "projectId": 7,
-    "img": "/images/pl.jpg",
-    "title": "Mini Premier League App",
-    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
-    "githubUrl": "https://github.com/jovan6jovan/pl-app",
-    "demoUrl": "https://pl-app.netlify.com/"
-  },
-  {
-    "projectCategoryId": "react",
     "projectId": 8,
-    "img": "./images/cache.jpg",
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/31dcache.jpg",
     "title": "Hotel Reservation",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "https://github.com/jovan6jovan/hotel",

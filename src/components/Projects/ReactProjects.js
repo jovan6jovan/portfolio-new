@@ -8,7 +8,7 @@ const ReactProjects = ({ projects }) => {
         project.projectCategoryId === "react" ? (
           <Project
             key={project.projectId}
-            img={project.img}
+            imgSrc={project.imgSrc}
             title={project.title}
             desc={project.desc}
             githubUrl={project.githubUrl}
