@@ -3,12 +3,17 @@
 
 .project-card {
   max-width: 350px;
+  background-color: $primary-color;
   border: 0.25em solid $secondary-color;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to bottom right, lighten($secondary-color, 20%), $secondary-color);
+  border-image-source: linear-gradient(to bottom right, lighten($secondary-color, 15%), $secondary-color);
   text-align: center;
   margin: 1em auto;
   box-shadow: $box-shadow;
+
+  @include desktops {
+    max-width: 550px;
+  }
 
   &:first-of-type {
     margin-top: 0;
@@ -26,6 +31,11 @@
     padding-top: 0.5em;
     margin-bottom: 0.75em;
     position: relative;
+    z-index: 2;
+
+    @include desktops {
+      font-size: 1.75rem;
+    }
 
     &::before {
       content: "";
@@ -42,6 +52,10 @@
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+
+    @include desktops {
+      font-size: 1.25rem;
+    }
   }
 
   & a {
@@ -52,6 +66,18 @@
     padding: 5px 8px;
     margin-bottom: 1em;
     box-shadow: $box-shadow;
+    transition: $hover-transition;
+
+    @include desktops {
+      font-size: 1.35rem;
+      margin-top: 0.5em;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white-color;
+      transform: translateY(-0.15em);
+    }
 
     &:first-of-type {
       margin-right: 1em;

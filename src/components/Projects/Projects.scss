@@ -2,12 +2,12 @@
 @import "../../styles/mixins";
 
 .projects-categories {
-  padding: 0.5em 1.25em;
+  margin-top: 0.5em;
+  padding: 0.5em;
   display: flex;
   justify-content: space-between;
-  background-color: $primary-color;
-  border-top: 1px solid $secondary-color;
-  border-bottom: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  color: $white-color;
   box-shadow: $box-shadow;
   cursor: pointer;
 
@@ -17,12 +17,32 @@
 
   @include desktops {
     width: 50%;
-    margin: auto;
+    margin: 2em auto 1em auto;
+    font-size: 1.5rem;
   }
 
   &__heading {
+    display: inline-flex;
+    align-items: center;
+    transition: $hover-transition;
+
+    & .icon {
+      margin-right: 0.25em;
+      font-size: 1.25rem;
+
+      @include tablets {
+        margin-right: 0.35em;
+        font-size: 1.5rem;
+      }
+
+      @include desktops {
+        margin-right: 0.35em;
+        font-size: 1.5rem;
+      }
+    }
+
     &:hover {
-      color: $secondary-color;
+      color: $primary-color;
     }
   }
 }
@@ -37,6 +57,6 @@
   }
 
   @include desktops {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

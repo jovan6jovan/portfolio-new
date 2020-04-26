@@ -13,7 +13,7 @@
     "projectId": 6,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/pl.jpg",
     "title": "Premier League App",
-    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+    "desc": "My first React app. It shows the current English Premier League table & standings, which updates after every game. It also shows information about clubs, such as rosters, previous fixtures, upcoming fixtures, etc. I used the combination of class-based and functional components, as well as react-router. App is hosted on Netlify, and it uses football-data.org API.",
     "githubUrl": "https://github.com/jovan6jovan/pl-app",
     "demoUrl": "https://pl-app.netlify.com/"
   },
@@ -22,7 +22,7 @@
     "projectId": 7,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/nba.jpg",
     "title": "Mini NBA App",
-    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+    "desc": "Second React app from the category of sport. This time I used only functional components with React hooks. Of course, there is also the react-router. The emphasis of this app is on the player's stats, but there is also basic info about teams and the upcoming games. It's also hosted on Netlify, and it uses balldontlie.io API.",
     "githubUrl": "https://github.com/jovan6jovan/nba-app",
     "demoUrl": "https://jovan-nba-app.netlify.com/"
   },
@@ -30,7 +30,7 @@
     "projectCategoryId": "react",
     "projectId": 8,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/31dcache.jpg",
-    "title": "Hotel Reservation",
+    "title": "Hotel Reservation App",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "https://github.com/jovan6jovan/hotel",
     "demoUrl": "https://jovan-nba-app.netlify.com/"

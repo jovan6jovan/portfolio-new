@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaJs, FaReact, FaWordpress } from "react-icons/fa";
 import { fetchProjects } from "./fetchProjects";
 import ReactProjects from "./ReactProjects";
 import VanillaProjects from "./VanillaProjects";
@@ -25,6 +26,7 @@ const Projects = () => {
           id="vanilla"
           onClick={onHeadingClick}
         >
+          <FaJs className="icon" />
           Vanilla JS
         </li>
         <li
@@ -32,6 +34,7 @@ const Projects = () => {
           id="react"
           onClick={onHeadingClick}
         >
+          <FaReact className="icon" />
           React
         </li>
         <li
@@ -39,6 +42,7 @@ const Projects = () => {
           id="wordpress"
           onClick={onHeadingClick}
         >
+          <FaWordpress className="icon" />
           WordPress
         </li>
       </ul>
