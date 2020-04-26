@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaDesktop } from "react-icons/fa";
 import "./Project.scss";
 
-const Project = ({ imgSrc, title, desc, githubUrl, demoUrl}) => (
+const Project = ({ imgSrc, title, desc, githubUrl, demoUrl }) => (
   <div className="project-card">
     <div className="project-card__image">
       <img src={imgSrc} alt="project" />

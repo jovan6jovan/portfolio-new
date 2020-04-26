@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaJs, FaReact, FaWordpress } from "react-icons/fa";
 import { fetchProjects } from "./fetchProjects";
-import ReactProjects from "./ReactProjects";
-import VanillaProjects from "./VanillaProjects";
-import WordPressProjects from "./WordPressProjects";
+import Project from "./Project";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -16,13 +14,31 @@ const Projects = () => {
 
   const onHeadingClick = (e) => {
     setId(e.target.id);
+    let current = document.getElementsByClassName("active-tab");
+    current[0].className = current[0].className.replace(" active-tab", "");
+    e.target.className += " active-tab";
   };
+
+  const renderProjects = (projectCategory) => (
+    projects.map((project) =>
+      project.projectCategoryId === projectCategory ? (
+        <Project
+          key={project.projectId}
+          imgSrc={project.imgSrc}
+          title={project.title}
+          desc={project.desc}
+          githubUrl={project.githubUrl}
+          demoUrl={project.demoUrl}
+        />
+      ) : null
+    )
+  )
 
   return (
     <>
       <ul className="projects-categories">
         <li
-          className="projects-categories__heading"
+          className="projects-categories__heading active-tab"
           id="vanilla"
           onClick={onHeadingClick}
         >
@@ -48,9 +64,9 @@ const Projects = () => {
       </ul>
 
       <div className="projects-grid">
-        {id === "vanilla" && <VanillaProjects projects={projects} />}
-        {id === "react" && <ReactProjects projects={projects}  />}
-        {id === "wordpress" && <WordPressProjects projects={projects} />}
+        {id === "vanilla" && renderProjects("vanilla")}
+        {id === "react" && renderProjects("react")}
+        {id === "wordpress" && renderProjects("wordpress")}
       </div>
     </>
   );

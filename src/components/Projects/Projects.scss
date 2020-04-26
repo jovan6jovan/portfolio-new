@@ -24,11 +24,21 @@
   &__heading {
     display: inline-flex;
     align-items: center;
-    transition: $hover-transition;
+    // transition: $hover-transition;
+
+    &.active-tab {
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
 
     & .icon {
       margin-right: 0.25em;
       font-size: 1.25rem;
+      pointer-events: none;
 
       @include tablets {
         margin-right: 0.35em;
@@ -39,10 +49,6 @@
         margin-right: 0.35em;
         font-size: 1.5rem;
       }
-    }
-
-    &:hover {
-      color: $primary-color;
     }
   }
 }
