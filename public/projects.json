@@ -1,25 +1,16 @@
 [
   {
-    "projectCategoryId": "vanilla",
-    "projectId": 1,
-    "imgSrc": "",
-    "title": "Two Dice Pig Game",
-    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
-    "githubUrl": "",
-    "demoUrl": ""
-  },
-  {
     "projectCategoryId": "react",
-    "projectId": 6,
+    "projectId": 1,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/pl.jpg",
     "title": "Premier League App",
-    "desc": "My first React app. It shows the current English Premier League table & standings, which updates after every game. It also shows information about clubs, such as rosters, previous fixtures, upcoming fixtures, etc. I used the combination of class-based and functional components, as well as react-router. App is hosted on Netlify, and it uses football-data.org API.",
+    "desc": "My first React app. It shows the current English Premier League table, which updates after every game. It also shows information about clubs, such as rosters, previous fixtures, upcoming fixtures, etc. I used the combination of class-based and functional components, as well as react-router. App is hosted on Netlify, and it uses football-data.org API.",
     "githubUrl": "https://github.com/jovan6jovan/pl-app",
     "demoUrl": "https://pl-app.netlify.com/"
   },
   {
     "projectCategoryId": "react",
-    "projectId": 7,
+    "projectId": 2,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/nba.jpg",
     "title": "Mini NBA App",
     "desc": "Second React app from the category of sport. This time I used only functional components with React hooks. Of course, there is also the react-router. The emphasis of this app is on the player's stats, but there is also basic info about teams and the upcoming games. It's also hosted on Netlify, and it uses balldontlie.io API.",
@@ -28,12 +19,48 @@
   },
   {
     "projectCategoryId": "react",
-    "projectId": 8,
+    "projectId": 3,
     "imgSrc": "http://u.cubeupload.com/jovan6jovan/31dcache.jpg",
     "title": "Hotel Reservation App",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "https://github.com/jovan6jovan/hotel",
     "demoUrl": "https://jovan-nba-app.netlify.com/"
+  },
+  {
+    "projectCategoryId": "vanilla",
+    "projectId": 4,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/piggame.jpg",
+    "title": "Two Dice Pig Game",
+    "desc": "This is my first app from the category of browser games. The game has two dice and two players, playing in rounds. The player can roll any dice except 1 (then all his round score gets lost), or two 6 (then all his global score gets lost). The first player who reach 100 points on the GLOBAL score wins the game. This app is hosted on GitHub Pages.",
+    "githubUrl": "https://github.com/jovan6jovan/pig-game",
+    "demoUrl": "https://jovan6jovan.github.io/pig-game/"
+  },
+  {
+    "projectCategoryId": "vanilla",
+    "projectId": 5,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/typing.jpg",
+    "title": "Typing speed test",
+    "desc": "A test that measures how fast you can type. The program shows random sentences, and it is up to you to type them identically in the text field on the page. When you finish, you have an insight into the WPM parameter (words per minute). This app is also hosted on GitHub Pages.",
+    "githubUrl": "https://github.com/jovan6jovan/typing-speed-test",
+    "demoUrl": "https://jovan6jovan.github.io/typing-speed-test/"
+  },
+  {
+    "projectCategoryId": "vanilla",
+    "projectId": 6,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/weather.jpg",
+    "title": "Weather App",
+    "desc": "Simple weather app which uses external API to get information about current temperature and other stuff. It also uses HTML Geolocation API to get the geographical position of a user. Hosted on GitHub Pages.",
+    "githubUrl": "https://github.com/jovan6jovan/weather-app",
+    "demoUrl": "https://jovan6jovan.github.io/weather-app/"
+  },
+  {
+    "projectCategoryId": "vanilla",
+    "projectId": 7,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/tasklist.jpg",
+    "title": "Tasklist app",
+    "desc": "One of the rare cases where I have used a CSS framework, which in this case was Materialize.css. This app uses browser's local storage. Like previous apps, this app is also hosted on GitHub Pages.",
+    "githubUrl": "https://github.com/jovan6jovan/tasklist",
+    "demoUrl": "https://jovan6jovan.github.io/tasklist"
   },
   {
     "projectCategoryId": "wordpress"

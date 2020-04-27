@@ -19,6 +19,7 @@
     border: 1px solid $secondary-color;
     background-color: $secondary-color;
     color: $white-color;
+    transition: $hover-transition;
 
     &:hover {
       background-color: lighten($secondary-color, 5%);

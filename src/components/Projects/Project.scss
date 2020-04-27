@@ -12,15 +12,24 @@
   box-shadow: $box-shadow;
 
   @include desktops {
-    max-width: 550px;
+    max-width: 500px;
+    margin-bottom: 2em;
   }
 
   &:first-of-type {
     margin-top: 0;
+
+    @include desktops {
+      margin-top: 1em;
+    }
   }
 
   &:last-of-type {
     margin-bottom: 0;
+
+    @include desktops {
+      margin-bottom: 2em;
+    }
   }
 
   & img {

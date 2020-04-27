@@ -5,7 +5,7 @@ import Project from "./Project";
 import "./Projects.scss";
 
 const Projects = () => {
-  const [id, setId] = useState("vanilla");
+  const [id, setId] = useState("react");
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -39,19 +39,19 @@ const Projects = () => {
       <ul className="projects-categories">
         <li
           className="projects-categories__heading active-tab"
-          id="vanilla"
-          onClick={onHeadingClick}
-        >
-          <FaJs className="icon" />
-          Vanilla JS
-        </li>
-        <li
-          className="projects-categories__heading"
           id="react"
           onClick={onHeadingClick}
         >
           <FaReact className="icon" />
           React
+        </li>
+        <li
+          className="projects-categories__heading"
+          id="vanilla"
+          onClick={onHeadingClick}
+        >
+          <FaJs className="icon" />
+          Vanilla JS
         </li>
         <li
           className="projects-categories__heading"
@@ -64,8 +64,8 @@ const Projects = () => {
       </ul>
 
       <div className="projects-grid">
-        {id === "vanilla" && renderProjects("vanilla")}
         {id === "react" && renderProjects("react")}
+        {id === "vanilla" && renderProjects("vanilla")}
         {id === "wordpress" && renderProjects("wordpress")}
       </div>
     </>
