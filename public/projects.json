@@ -20,7 +20,7 @@
   {
     "projectCategoryId": "react",
     "projectId": 3,
-    "imgSrc": "http://u.cubeupload.com/jovan6jovan/31dcache.jpg",
+    "imgSrc": "",
     "title": "Hotel Reservation App",
     "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
     "githubUrl": "https://github.com/jovan6jovan/hotel",
@@ -63,6 +63,21 @@
     "demoUrl": "https://jovan6jovan.github.io/tasklist"
   },
   {
-    "projectCategoryId": "wordpress"
+    "projectCategoryId": "wordpress",
+    "projectId": 8,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/31dcache.jpg",
+    "title": "Restaurant Cache",
+    "desc": "I made this website for one restaurant located in Belgrade. It's designed and developed completely from zero, and it uses a custom made WordPress theme. There are no WordPress plugins included, except one for site migration.",
+    "githubUrl": "https://github.com/jovan6jovan/cache-wp",
+    "demoUrl": "https://restaurantcache.com/"
+  },
+  {
+    "projectCategoryId": "wordpress",
+    "projectId": 9,
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/lilo.jpg",
+    "title": "Lilo - The Center for Healthy Eating",
+    "desc": "This website is also designed and developed completely from zero, and it also uses a custom made WordPress theme. Again, no other WordPress plugins. For this project, I have used custom post types.",
+    "githubUrl": "https://github.com/jovan6jovan/lilo",
+    "demoUrl": ""
   }
 ]
