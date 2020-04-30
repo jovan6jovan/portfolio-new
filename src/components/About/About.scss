@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.about {
+  margin-top: 2em;
+  background-color: $black-color;
+  color: $white-color;
+  padding: 1em 12.5% 0 12.5%;
+
+  @include desktops {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 4em;
+    padding: 2em 2em 2em 4em;
+  }
+
+  & h2 {
+    font-size: 2.25rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: $secondary-color;
+    margin-right: 0.25em;
+
+    @include desktops {
+      font-size: 1.5rem;
+    }
+
+    &--larger {
+      font-size: 3rem;
+
+      @include desktops {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin-bottom: 3em;
+    display: block;
+    width: max-content;
+
+    @include desktops {
+      margin-bottom: 0;
+    }
+  }
+
+  &__skills {
+    padding-bottom: 1em;
+
+    &__heading {
+      margin: 1em auto 0.75em auto;
+    }
+
+    &__icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1em;
+    }
+  }
+}
