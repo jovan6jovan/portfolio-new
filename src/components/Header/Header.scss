@@ -37,10 +37,15 @@ header {
 
   &-item-link {
     color: $secondary-color;
+    transition: $main-transition;
+    padding-bottom: 0.2em;
 
     &:hover {
       color: lighten($secondary-color, 10%);
-      padding-bottom: 0.2em;
+    }
+
+    &.active-nav-item {
+      color: lighten($secondary-color, 10%);
       border-bottom: 0.15em solid lighten($secondary-color, 10%);
     }
 

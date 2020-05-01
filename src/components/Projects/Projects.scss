@@ -2,6 +2,7 @@
 @import "../../styles/mixins";
 
 .projects-categories {
+  font-size: 1rem;
   margin-top: 0.5em;
   padding: 0.5em;
   display: flex;
@@ -24,7 +25,8 @@
   &__heading {
     display: inline-flex;
     align-items: center;
-    // transition: $hover-transition;
+    padding-bottom: 0.25em;
+    // transition: $main-transition;
 
     &.active-tab {
       color: $primary-color;

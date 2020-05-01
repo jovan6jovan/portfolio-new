@@ -44,6 +44,7 @@
     width: max-content;
 
     @include desktops {
+      margin-top: 1.5em;
       margin-bottom: 0;
     }
   }

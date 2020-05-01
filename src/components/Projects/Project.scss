@@ -75,7 +75,7 @@
     padding: 5px 8px;
     margin-bottom: 1em;
     box-shadow: $box-shadow;
-    transition: $hover-transition;
+    transition: $main-transition;
 
     @include desktops {
       font-size: 1.35rem;
