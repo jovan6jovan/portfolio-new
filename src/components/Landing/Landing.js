@@ -10,15 +10,12 @@ const Landing = () => (
         <span className="landing__title--span">Front-End </span>Developer
       </h1>
       <p className="landing__text">
-        Not that we aren’t huge fans of IKEA, of course. I do think this
-        combination can work, but it needs to be used as an accent, rather than
-        a main color. In this space from Femina, the blue and yellow combo is
-        lively but not childish when used in a judicious way.
+        Passionate about Front-End Development. Loves to build things. Interested in React, but opened to learn any other Front-End library/framework. Motivated to work in a team and also to learn every day throughout new challenges.
       </p>
       <Button
         path="/projects"
         classNames="btn btn--blue landing__btn"
-        text="Explore my projects"
+        text="Explore projects"
       />
     </section>
     <section className="landing__img">

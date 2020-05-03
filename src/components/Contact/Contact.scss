@@ -2,13 +2,51 @@
 @import "../../styles/mixins";
 
 .contact {
-  height: 80vh;
+  margin-top: 2em;
+  height: calc(100vh - 102px - 2em);
+  background-color: $black-color;
+  color: $white-color;
   display: grid;
   place-content: center;
   text-align: center;
+  position: relative;
 
   @include desktops {
+    height: calc(100vh - 80px - 2em);
     text-align: left;
+    display: block;
+  }
+
+  &__container {
+    @include desktops {
+      min-width: 800px;
+      max-width: 1170px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__heading,
+  &__form {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktops {
+      max-width: 100%;
+    }
+  }
+
+  & p {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   & label {
@@ -18,14 +56,30 @@
 
   & input,
   & textarea {
+    width: 100%;
     padding: 0.75em;
     outline: 0;
-    box-shadow: $box-shadow;
+    background-color: transparent;
+    color: $white-color;
+    border: none;
+    border-bottom: 0.25em solid $secondary-color;
+    transition: border-color 0.3s ease-in-out;
+
+    @include desktops {
+      width: 85%;
+    }
 
     &:focus,
     &:active {
-      border: 2px solid $secondary-color;
-      box-shadow: $box-shadow;
+      border-bottom-color: $primary-color;
     }
+
+    &::placeholder {
+      letter-spacing: 1px;
+    }
+  }
+
+  & textarea {
+    padding-bottom: 0;
   }
 }

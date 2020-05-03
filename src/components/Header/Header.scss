@@ -18,7 +18,11 @@ header {
 .logo {
   font-family: $headings-font;
   color: $black-color;
-  @include gradient-text(to left, $secondary-color, lighten($secondary-color, 15%));
+  @include gradient-text(
+    to left,
+    $secondary-color,
+    lighten($secondary-color, 15%)
+  );
   position: relative;
   transition: all 0.5s;
 
@@ -35,32 +39,39 @@ header {
   letter-spacing: 1px;
   margin-top: 1em;
 
-  &-item-link {
-    color: $secondary-color;
-    transition: $main-transition;
-    padding-bottom: 0.2em;
+  &__item {
+    &:first-child {
+      display: none;
 
-    &:hover {
-      color: lighten($secondary-color, 10%);
-    }
-
-    &.active-nav-item {
-      color: lighten($secondary-color, 10%);
-      border-bottom: 0.15em solid lighten($secondary-color, 10%);
-    }
-
-    @include desktops {
-      margin-right: 1em;
-      font-size: 1.5rem;
-
-      &[href="/contact"] {
-        margin-right: 0;
+      @include desktops {
+        display: inline;
       }
     }
-  }
 
-  @include desktops {
-    margin-top: 0;
-    font-weight: bold;
+    &__link {
+      color: $secondary-color;
+      transition: $main-transition;
+      padding-bottom: 0.2em;
+
+      &:hover {
+        color: lighten($secondary-color, 10%);
+      }
+
+      &.active-nav-item {
+        color: lighten($secondary-color, 10%);
+        border-bottom: 0.15em solid lighten($secondary-color, 10%);
+      }
+
+      @include desktops {
+        margin-right: 1em;
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        &[href="/contact"] {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }

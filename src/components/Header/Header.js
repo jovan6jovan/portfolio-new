@@ -16,23 +16,23 @@ const Header = () => {
       </Link>
       <nav className="nav">
         <ul className="nav__list">
-        <li className="nav__list-item">
-            <Link to="/" className="nav__list-item-link active-nav-item" onClick={onNavItemClick}>
+        <li className="nav__list__item">
+            <Link to="/" className="nav__list__item__link active-nav-item" onClick={onNavItemClick}>
               Home
             </Link>
           </li>
-          <li className="nav__list-item">
-            <Link to="/about" className="nav__list-item-link" onClick={onNavItemClick}>
+          <li className="nav__list__item">
+            <Link to="/about" className="nav__list__item__link" onClick={onNavItemClick}>
               About
             </Link>
           </li>
-          <li className="nav__list-item">
-            <Link to="/projects" className="nav__list-item-link" onClick={onNavItemClick}>
+          <li className="nav__list__item">
+            <Link to="/projects" className="nav__list__item__link" onClick={onNavItemClick}>
               Projects
             </Link>
           </li>
-          <li className="nav__list-item">
-            <Link to="/contact" className="nav__list-item-link" onClick={onNavItemClick}>
+          <li className="nav__list__item">
+            <Link to="/contact" className="nav__list__item__link" onClick={onNavItemClick}>
               Contact
             </Link>
           </li>

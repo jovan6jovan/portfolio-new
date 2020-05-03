@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaBirthdayCake,
   FaMapMarkerAlt,
+  FaEnvelope,
   FaLaptopCode,
   FaHtml5,
   FaCss3Alt,
@@ -27,6 +28,9 @@ const About = () => (
         <FaMapMarkerAlt className="about__icon" style={{verticalAlign: "sub"}} /> Location: Belgrade, Serbia
       </p>
       <p>
+        <FaEnvelope className="about__icon" style={{verticalAlign: "middle"}} /> jovan6jovanovic@gmail.com
+      </p>
+      <p>
         <FaLaptopCode className="about__icon" style={{verticalAlign: "text-bottom"}} /> Job: Front-End Developer
       </p>
       <a
@@ -48,7 +52,7 @@ const About = () => (
       <Button
         path="/"
         classNames="btn btn--blue about__btn"
-        text="Download my resume"
+        text="Download resume"
       />
     </div>
     <div className="about__second-section">
@@ -66,7 +70,7 @@ const About = () => (
       </p>
     </div>
     <div className="about__skills">
-      <h2 className="about__skills__heading">My skills</h2>
+      <h2 className="about__skills__heading">Skills</h2>
       <div className="about__skills__icons">
         <FaHtml5 className="about__icon about__icon--larger" />
         <FaCss3Alt className="about__icon about__icon--larger" />

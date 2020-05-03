@@ -8,6 +8,7 @@
   padding: 1em 12.5% 0 12.5%;
 
   @include desktops {
+    height: calc(100vh - 80px - 2em);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
