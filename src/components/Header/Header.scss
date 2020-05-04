@@ -39,38 +39,24 @@ header {
   letter-spacing: 1px;
   margin-top: 1em;
 
-  &__item {
-    &:first-child {
-      display: none;
+  &__item__link {
+    color: $secondary-color;
+    transition: $main-transition;
+    padding-bottom: 0.2em;
 
-      @include desktops {
-        display: inline;
-      }
+    &:hover {
+      color: lighten($secondary-color, 10%);
+      border-bottom: 0.15em solid lighten($secondary-color, 10%);
     }
 
-    &__link {
-      color: $secondary-color;
-      transition: $main-transition;
-      padding-bottom: 0.2em;
+    @include desktops {
+      margin-right: 1em;
+      margin-top: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
 
-      &:hover {
-        color: lighten($secondary-color, 10%);
-      }
-
-      &.active-nav-item {
-        color: lighten($secondary-color, 10%);
-        border-bottom: 0.15em solid lighten($secondary-color, 10%);
-      }
-
-      @include desktops {
-        margin-right: 1em;
-        margin-top: 0;
-        font-size: 1.5rem;
-        font-weight: bold;
-
-        &[href="/contact"] {
-          margin-right: 0;
-        }
+      &[href="/contact"] {
+        margin-right: 0;
       }
     }
   }
