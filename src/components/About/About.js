@@ -2,7 +2,6 @@ import React from "react";
 import {
   FaLinkedin,
   FaGithub,
-  FaBirthdayCake,
   FaMapMarkerAlt,
   FaEnvelope,
   FaLaptopCode,
@@ -21,9 +20,6 @@ const About = () => (
   <section className="about">
     <div className="about__first-section">
       <h2>Jovan Jovanovic</h2>
-      <p>
-        <FaBirthdayCake className="about__icon" /> Birth year: 1994
-      </p>
       <p>
         <FaMapMarkerAlt className="about__icon" style={{verticalAlign: "sub"}} /> Location: Belgrade, Serbia
       </p>
