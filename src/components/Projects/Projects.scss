@@ -60,9 +60,9 @@
   grid-template-columns: 1fr;
   padding: 2em 1em;
 
-  @include tablets {
-    grid-template-columns: 1fr 1fr;
-  }
+  // @include tablets {
+  //   grid-template-columns: 1fr 1fr;
+  // }
 
   @include desktops {
     grid-template-columns: 1fr 1fr;

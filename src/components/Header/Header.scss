@@ -39,6 +39,10 @@ header {
   letter-spacing: 1px;
   margin-top: 1em;
 
+  @include tablets {
+    font-size: 1rem;
+  }
+
   &__item__link {
     color: $secondary-color;
     transition: $main-transition;

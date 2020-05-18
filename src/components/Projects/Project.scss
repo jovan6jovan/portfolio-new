@@ -11,6 +11,11 @@
   margin: 1em auto;
   box-shadow: $box-shadow;
 
+  @include tablets {
+    max-width: 80%;
+    margin-bottom: 2em;
+  }
+
   @include desktops {
     max-width: 500px;
     margin-bottom: 2em;

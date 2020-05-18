@@ -20,13 +20,25 @@ const About = () => (
     <div className="about__first-section">
       <h2>Jovan Jovanovic</h2>
       <p>
-        <FaMapMarkerAlt className="about__icon" style={{verticalAlign: "sub"}} /> Location: Belgrade, Serbia
+        <FaMapMarkerAlt
+          className="about__icon"
+          style={{ verticalAlign: "sub" }}
+        />{" "}
+        Location: Belgrade, Serbia
       </p>
       <p>
-        <FaEnvelope className="about__icon" style={{verticalAlign: "middle"}} /> jovan6jovanovic@gmail.com
+        <FaEnvelope
+          className="about__icon"
+          style={{ verticalAlign: "middle" }}
+        />{" "}
+        jovan6jovanovic@gmail.com
       </p>
       <p>
-        <FaLaptopCode className="about__icon" style={{verticalAlign: "text-bottom"}} /> Job: Front-End Developer
+        <FaLaptopCode
+          className="about__icon"
+          style={{ verticalAlign: "text-bottom" }}
+        />{" "}
+        Job: Front-End Developer
       </p>
       <a
         href="https://github.com/jovan6jovan"
@@ -44,18 +56,28 @@ const About = () => (
       >
         <FaLinkedin />
       </a>
-      <a href="../../resume/Jovan_Jovanovic_resume.pdf" className="btn btn--blue about__btn" download>
+      <a
+        href="https://drive.google.com/open?id=1NsEuj_5G1mye4lmuxM8YaKyZRbzXiUx6"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn--blue about__btn"
+      >
         Download resume
       </a>
     </div>
     <div className="about__second-section">
       <h4>Hi there!</h4>
       <p className="about__second-section__paragraph">
-        My name is Jovan, I am 25 years old, and I live in Belgrade, the capital city of my beautiful country called Serbia. I enjoy building user interfaces.
-        Most of my free time I spend experimenting with CSS, JavaScript, and my favorite library called React.
-        Learning new skills is the thing I adore, and because of that, I love working hard in order to absorb all new pieces of information that I get from the learning.
-        You can see my work on the Projects page, and also there you can see how I write the code.
-        If some of my projects seem interesting to you, feel free to contact me directly via email, or you can use the contact form, which is located on the Contact page.
+        My name is Jovan, I am 25 years old, and I live in Belgrade, the capital
+        city of my beautiful country called Serbia. I enjoy building user
+        interfaces. Most of my free time I spend experimenting with CSS,
+        JavaScript, and my favorite library called React. Learning new skills is
+        the thing I adore, and because of that, I love working hard in order to
+        absorb all new pieces of information that I get from the learning. You
+        can see my work on the Projects page, and also there you can see how I
+        write the code. If some of my projects seem interesting to you, feel
+        free to contact me directly via email, or you can use the contact form,
+        which is located on the Contact page.
       </p>
       <h4>Looking forward to hearing from you!</h4>
     </div>
