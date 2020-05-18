@@ -6,25 +6,25 @@
     "title": "Premier League App",
     "desc": "My first React app. It shows the current English Premier League table, which updates after every game. It also shows information about clubs, such as rosters, previous fixtures, upcoming fixtures, etc. I used the combination of class-based and functional components, as well as react-router. App is hosted on Netlify, and it uses football-data.org API.",
     "githubUrl": "https://github.com/jovan6jovan/pl-app",
-    "demoUrl": "https://pl-app.netlify.com/"
+    "demoUrl": "https://pl-app.netlify.app/"
   },
   {
     "projectCategoryId": "react",
     "projectId": 2,
-    "imgSrc": "http://u.cubeupload.com/jovan6jovan/nba.jpg",
-    "title": "Mini NBA App",
-    "desc": "Second React app from the category of sport. This time I used only functional components with React hooks. Of course, there is also the react-router. The emphasis of this app is on the player's stats, but there is also basic info about teams and the upcoming games. It's also hosted on Netlify, and it uses balldontlie.io API.",
-    "githubUrl": "https://github.com/jovan6jovan/nba-app",
-    "demoUrl": "https://jovan-nba-app.netlify.com/"
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/hotel.jpg",
+    "title": "Hotel Reservation App",
+    "desc": "This app uses some of the most modern features of React, like hooks & Context API. Users can filter the rooms by multiple criteria such as type, capacity, size, price, etc.. Included packages: react-router, react-icons, lightbox2... Data is stored in the Contentful headless CMS, and the demo is hosted on Netlify.",
+    "githubUrl": "https://github.com/jovan6jovan/hotel",
+    "demoUrl": "https://jovan-hotel.netlify.app/"
   },
   {
     "projectCategoryId": "react",
     "projectId": 3,
-    "imgSrc": "http://u.cubeupload.com/jovan6jovan/hotel.jpg",
-    "title": "Hotel Reservation App",
-    "desc": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
-    "githubUrl": "https://github.com/jovan6jovan/hotel",
-    "demoUrl": "https://jovan-hotel.netlify.app/"
+    "imgSrc": "http://u.cubeupload.com/jovan6jovan/nba.jpg",
+    "title": "Mini NBA App",
+    "desc": "Second React app from the category of sport. This time I used only functional components with React hooks. Of course, there is also the react-router. The emphasis of this app is on the player's stats, but there is also basic info about teams and the upcoming games. It's hosted on Netlify, and it uses balldontlie.io API.",
+    "githubUrl": "https://github.com/jovan6jovan/nba-app",
+    "demoUrl": "https://jovan-nba-app.netlify.app/"
   },
   {
     "projectCategoryId": "vanilla",

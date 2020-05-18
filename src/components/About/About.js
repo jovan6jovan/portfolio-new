@@ -14,7 +14,6 @@ import {
 } from "react-icons/fa";
 
 import "./About.scss";
-import Button from "../Button/Button";
 
 const About = () => (
   <section className="about">
@@ -45,25 +44,20 @@ const About = () => (
       >
         <FaLinkedin />
       </a>
-      <Button
-        path="/"
-        classNames="btn btn--blue about__btn"
-        text="Download resume"
-      />
+      <a href="../../resume/Jovan_Jovanovic_resume.pdf" className="btn btn--blue about__btn" download>
+        Download resume
+      </a>
     </div>
     <div className="about__second-section">
       <h4>Hi there!</h4>
       <p className="about__second-section__paragraph">
-        My name is Jovan, I am 25 years old, and I live in Belgrade, the capital
-        city of my beautiful country called Serbia. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Donec urna tellus, tristique ut efficitur
-        nec, pretium vel tellus. Nam suscipit rutrum enim sit amet luctus. Duis
-        sed augue turpis. Pellentesque dictum eget metus sed ultricies. Praesent
-        pretium rutrum tincidunt. Donec condimentum nisl quam, id posuere leo
-        scelerisque vitae. Phasellus rutrum risus id tortor vulputate, eu
-        sollicitudin erat tempus. Sed euismod ac ipsum ut dignissim. Phasellus
-        eu finibus ante, non aliquet tortor.
+        My name is Jovan, I am 25 years old, and I live in Belgrade, the capital city of my beautiful country called Serbia. I enjoy building user interfaces.
+        Most of my free time I spend experimenting with CSS, JavaScript, and my favorite library called React.
+        Learning new skills is the thing I adore, and because of that, I love working hard in order to absorb all new pieces of information that I get from the learning.
+        You can see my work on the Projects page, and also there you can see how I write the code.
+        If some of my projects seem interesting to you, feel free to contact me directly via email, or you can use the contact form, which is located on the Contact page.
       </p>
+      <h4>Looking forward to hearing from you!</h4>
     </div>
     <div className="about__skills">
       <h2 className="about__skills__heading">Skills</h2>
